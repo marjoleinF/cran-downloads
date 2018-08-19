@@ -9,7 +9,7 @@ shinyUI(fluidPage(
 
   sidebarLayout(
     sidebarPanel(
-      textInput("packages", "Packages", paste(top5, collapse = ", ")),
+      textInput("packages", "Packages", c("pre", "glmertree")),
       dateRangeInput("range", "Dates", last_month, today),
       checkboxInput("showTrend", "Show trend")
     ),
